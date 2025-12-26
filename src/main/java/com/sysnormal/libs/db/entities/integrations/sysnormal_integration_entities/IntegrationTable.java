@@ -58,4 +58,9 @@ public class IntegrationTable extends BaseEntity {
 
     @Column(name = "integrate_by_time", length = 4000)
     private String integrateByTime;
+
+    protected static final long TABLE_ID = 35002;
+    public static long getTableId() {
+        return TABLE_ID;
+    }
 }

@@ -42,4 +42,9 @@ public class IntegrationControl extends BaseEntity {
 
     @Column(name = "last_reason", length = 255)
     private String lastReason;
+
+    protected static final long TABLE_ID = 35005L;
+    public static long getTableId() {
+        return TABLE_ID;
+    }
 }
