@@ -44,12 +44,23 @@
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 	</properties>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>4.0.2</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<dependencies>
 		<!-- API padrão JPA -->
 		<dependency>
 			<groupId>jakarta.persistence</groupId>
 			<artifactId>jakarta.persistence-api</artifactId>
-			<version>3.2.0</version>
 			<optional>true</optional>
 		</dependency>
 
@@ -57,14 +68,12 @@
 		<dependency>
 			<groupId>org.hibernate.orm</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>7.1.10.Final</version>
 			<optional>true</optional>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-commons</artifactId>
-			<version>4.0.1</version>
 			<optional>true</optional>
 		</dependency>
 
@@ -72,7 +81,6 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.42</version>
 			<optional>true</optional>
 		</dependency>
 
@@ -100,7 +108,7 @@
 				</executions>
 				<configuration>
 					<toolchains>
-						<jdk>21</jdk>
+						<jdk>${java.version}</jdk>
 					</toolchains>
 				</configuration>
 			</plugin>
