@@ -1,6 +1,6 @@
-package com.sysnormal.libs.db.entities.integrations.sysnormal_integration_entities;
+package com.sysnormal.data.integrations.sysnormal_integration_data_model.entities;
 
-import com.sysnormal.libs.db.entities.base_entities.BaseEntity;
+import com.sysnormal.data.base_data_model.entities.BaseEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,6 +9,9 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 
+/**
+ * Entity class
+ */
 @Entity
 @Table(name = "integration_tables")
 @Getter
@@ -59,8 +62,5 @@ public class IntegrationTable extends BaseEntity {
     @Column(name = "integrate_by_time", length = 4000)
     private String integrateByTime;
 
-    protected static final long TABLE_ID = 35002;
-    public static long getTableId() {
-        return TABLE_ID;
-    }
+
 }

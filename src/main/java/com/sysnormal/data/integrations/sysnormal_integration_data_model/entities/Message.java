@@ -1,15 +1,17 @@
-package com.sysnormal.libs.db.entities.integrations.sysnormal_integration_entities;
+package com.sysnormal.data.integrations.sysnormal_integration_data_model.entities;
 
-import com.sysnormal.libs.db.entities.base_entities.BaseEntity;
+import com.sysnormal.data.base_data_model.entities.BaseEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.hibernate.Length;
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 
+/**
+ * Entity class
+ */
 @Entity
 @Getter
 @Setter
@@ -66,9 +68,5 @@ public class Message extends BaseEntity {
     @Column(name = "RESPONSE_BODY", length = 4000)
     private String responseBody;
 
-    protected static final long TABLE_ID = 35010L;
-    public static long getTableId() {
-        return TABLE_ID;
-    }
 }
 

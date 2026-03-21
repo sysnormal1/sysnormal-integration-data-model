@@ -1,6 +1,6 @@
-package com.sysnormal.libs.db.entities.integrations.sysnormal_integration_entities;
+package com.sysnormal.data.integrations.sysnormal_integration_data_model.entities;
 
-import com.sysnormal.libs.db.entities.base_entities.BaseEntity;
+import com.sysnormal.data.base_data_model.entities.BaseEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -9,6 +9,9 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 
+/**
+ * Entity class
+ */
 @Entity
 @Table(name = "integration_parameters")
 @Getter
@@ -34,8 +37,5 @@ public class IntegrationParameter extends BaseEntity {
     @Column(name = "parameter_value", length = 4000)
     private String parameterValue;
 
-    protected static final long TABLE_ID = 35001;
-    public static long getTableId() {
-        return TABLE_ID;
-    }
+
 }

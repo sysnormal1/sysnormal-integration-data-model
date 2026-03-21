@@ -32,56 +32,39 @@ Add this dependency to your application’s `pom.xml`:
 
 ```xml
 <dependency>
-    <groupId>com.sysnormal.libs.db.entities.integrations>
-    <artifactId>sysnormal-entities</artifactId>
+    <groupId>io.github.sysnormal1.data.integrations>
+    <artifactId>sysnormal-integration-data-model</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
 
----
 
-## 🔧 Usage Example
-Importing an entity
-````java
-import com.sysnormal.libs.db.entities.integrations.ep_entities.agents.Agent;
-
-@Service
-public class AgentService {
-
-    @PersistenceContext
-    private EntityManager em;
-
-    public Agent find(Long id) {
-        return em.find(Agent.class, id);
-    }
-}
-
-````
-Repository Example (Spring Data)
-````java
-public interface AgentRepository extends JpaRepository<Agent, Long> {}
-````
 ---
 
 ## 📚 How to Clone
 ````bash
-git clone https://github.com/sysnormal1/java-db-sysnormal-integration-entities-library.git
+git clone https://github.com/sysnormal1/sysnormal-integration-data-model.git
 
 ````
 
 ------------------------------------------------------------------------
 
-## 📜 License
+## ⚖️ License
 
-MIT License --- free for personal and commercial use.
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
-------------------------------------------------------------------------
+---
 
 ## 👤 Author
 
 **Alencar Velozo**  
 GitHub: [@aalencarvz1](https://github.com/aalencarvz1)
-Organization: [@sysnormal1](https://github.com/sysnormal1)
-Software Engineer --- JPA, Hibernate, Spring & Database Specialist
 
-------------------------------------------------------------------------
+---
+## 👤 Organization
+
+**Sysnormal**  
+GitHub: [@sysnormal1](https://github.com/sysnormal1)
+
+---
+
