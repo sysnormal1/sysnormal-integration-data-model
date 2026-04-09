@@ -1,4 +1,7 @@
 # Sysnormal Database Sysnormal Integration Entities Library
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.sysnormal1.data.integrations/sysnormal-integration-data-model.svg)](https://central.sonatype.com/artifact/io.github.sysnormal1.data.integrations/sysnormal-integration-data-model)
+[![MvnRepository](https://img.shields.io/badge/mvnrepository-view-blue)](https://mvnrepository.com/artifact/io.github.sysnormal1.data.integrations/sysnormal-integration-data-model)
+[![GitHub tag](https://img.shields.io/github/v/tag/sysnormal1/sysnormal-integration-data-model)](https://github.com/sysnormal1/sysnormal-integration-data-model)
 
 ---
 
@@ -34,7 +37,7 @@ Add this dependency to your application’s `pom.xml`:
 <dependency>
     <groupId>io.github.sysnormal1.data.integrations>
     <artifactId>sysnormal-integration-data-model</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.3</version>
 </dependency>
 ```
 
