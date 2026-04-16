@@ -6,7 +6,7 @@
 	<!--<groupId>com.sysnormal.data.integrations</groupId>-->
 	<groupId>io.github.sysnormal1.data.integrations</groupId>
 	<artifactId>sysnormal-integration-data-model</artifactId>
-	<version>0.0.3</version>
+	<version>0.0.4</version>
 	<name>sysnormal-integration-data-model</name>
 	<description>Sysnormal database sysnormal integration entities library</description>
 	<url>https://github.com/sysnormal1/sysnormal-integration-data-model</url>
@@ -92,7 +92,7 @@
 		<dependency>
 			<groupId>io.github.sysnormal1.data</groupId>
 			<artifactId>base-data-model</artifactId>
-			<version>0.0.3</version>
+			<version>0.0.4</version>
 		</dependency>
 
 	</dependencies>
